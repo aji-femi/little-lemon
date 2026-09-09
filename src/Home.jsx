@@ -2,7 +2,7 @@ import menu from "./assets/a.jpg";
 import worktime from "./assets/c.jpg";
 import tablebook from "./assets/b.jpg";
 
-function Content() {
+function Home() {
   return (
     <main>
       <section>
@@ -56,4 +56,4 @@ function Content() {
     </main>
   );
 }
-export default Content;
+export default Home;
