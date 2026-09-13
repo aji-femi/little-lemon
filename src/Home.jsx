@@ -37,7 +37,7 @@ function Home() {
             optio eaque. Architecto inventore tenetur ex a sint nulla aut
             adipisci necessitatibus!
           </p>
-          <a href="#">Book your table now</a>
+          <a href="/booking">Book your table now</a>
         </article>
         <article className="card">
           <h2>Opening Hours</h2>

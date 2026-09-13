@@ -138,3 +138,20 @@ button:hover {
   font-size: medium;
   margin-top: 15px;
 }
+.container {
+  background-color: aliceblue;
+  width: 60%;
+  border-radius: 20px 0px;
+  margin: auto;
+  margin-top: 30px;
+  padding: 10px 10px;
+}
+.container h1 {
+  color: #666;
+  text-align: center;
+  font-style: oblique;
+}
+.container p {
+  color: #666;
+  text-align: center;
+}
