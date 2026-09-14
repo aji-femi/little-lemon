@@ -21,17 +21,17 @@ function Booking() {
     <>
       <div>
         <h1 id="dine">Reserve a Table</h1>
-        <p class="subtitle">Dine with Litte Lemon Restaurant</p>
+        <p className="subtitle">Dine with Litte Lemon Restaurant</p>
       </div>
       <form onSubmit={handleSubmit}>
-        <label htmlfor="name">Name</label>
+        <label htmlFor="name">Name</label>
         <input
           type="text"
           id="name"
           name="name"
           placeholder="👥Enter full name"
         />
-        <label htmlfor="email">Email Address</label>
+        <label htmlFor="email">Email Address</label>
         <input
           type="email"
           id="email"
@@ -47,8 +47,9 @@ function Booking() {
           value={date}
           onChange={handleDateChange}
           required
+          aria-label="Choose date"
         />
-        <label for="res-time">Choose time</label>
+        <label htmlFor="res-time">Choose time</label>
         <select
           id="res-time "
           value={time}
@@ -73,6 +74,7 @@ function Booking() {
           value={guests}
           onChange={(e) => setGuests(e.target.value)}
           required
+          aria-label="Number of guests"
         >
           <option value="">Select number of diners</option>
           <option value="1-2">1-2 diners</option>
@@ -85,15 +87,18 @@ function Booking() {
           id="occasion"
           value={occasion}
           onChange={(e) => setOccasion(e.target.value)}
+          aria-label="Occasion"
         >
           <option>Birthday🎂</option>
           <option>Anniversary🥂</option>
         </select>
 
-        <button class="confirm-btn">Confirm Reservation</button>
+        <button className="confirm-btn" aria-label="On Click">
+          Confirm Reservation
+        </button>
       </form>
       <div>
-        <p class="footer-note">
+        <p className="footer-note">
           You will receive a confirmation email once your reservation is
           confirmed. ⓘ
         </p>
